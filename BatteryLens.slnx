@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BatteryLens.csproj" />
+  <Project Path="BatteryLens.Tests/BatteryLens.Tests.csproj" />
+</Solution>
