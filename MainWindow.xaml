@@ -150,7 +150,7 @@
                         <StackPanel Grid.Row="1">
                             <theme:ThemeToggleButton Margin="0,0,0,6"/>
                         <!-- Open source link -->
-                        <Button Command="{Binding OpenRepositoryCommand}" Cursor="Hand" HorizontalContentAlignment="Stretch" ToolTip="Open the project on GitHub">
+                        <Button Command="{Binding OpenRepositoryCommand}" Cursor="Hand" HorizontalContentAlignment="Stretch" ToolTip="Open the project on GitHub" AutomationProperties.Name="Open the project on GitHub">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border x:Name="Bg" Background="Transparent" CornerRadius="8" Padding="10,8">
@@ -205,13 +205,13 @@
                                         <TextBlock Style="{StaticResource Label}" Margin="0,4,0,0" Text="{Binding SystemInfo.ProcessorName}" TextTrimming="CharacterEllipsis" MaxWidth="560" HorizontalAlignment="Left"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
-                                        <Button Style="{StaticResource SecondaryButton}" Command="{Binding RefreshHardwareCommand}" ToolTip="Re-read the hardware sensors" Margin="0,0,8,0">
+                                        <Button Style="{StaticResource SecondaryButton}" Command="{Binding RefreshHardwareCommand}" ToolTip="Re-read the hardware sensors" Margin="0,0,8,0" AutomationProperties.Name="Re-read the hardware sensors">
                                             <StackPanel Orientation="Horizontal">
                                                 <Path Width="12" Height="12" Data="{StaticResource Svg.Refresh}" Fill="{DynamicResource TextSecondary}" Stretch="Uniform" Margin="0,0,7,0"/>
                                                 <TextBlock Text="Refresh"/>
                                             </StackPanel>
                                         </Button>
-                                        <Button Style="{StaticResource PrimaryButton}" Command="{Binding ExportHtmlReportCommand}" ToolTip="Save a full diagnostic report to your Desktop">
+                                        <Button Style="{StaticResource PrimaryButton}" Command="{Binding ExportHtmlReportCommand}" ToolTip="Save a full diagnostic report to your Desktop" AutomationProperties.Name="Save a full diagnostic report to your Desktop">
                                             <StackPanel Orientation="Horizontal">
                                                 <Path Width="12" Height="12" Data="{StaticResource Svg.Document}" Fill="{DynamicResource TextInverse}" Stretch="Uniform" Margin="0,0,7,0"/>
                                                 <TextBlock Text="Export report"/>
@@ -436,7 +436,7 @@
                                         <TextBlock Style="{StaticResource Muted}" Margin="0,2,0,0" Text="Hardware details read from Windows."/>
                                     </StackPanel>
                                     <Button HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource SecondaryButton}" Command="{Binding GenerateOfficialWindowsReportCommand}"
-                                            ToolTip="Create and open the built-in Windows battery report" Content="Windows battery report"/>
+                                            ToolTip="Create and open the built-in Windows battery report" Content="Windows battery report" AutomationProperties.Name="Create and open the built-in Windows battery report"/>
                                 </Grid>
 
                                 <Border Style="{StaticResource Panel}" Margin="0,0,0,16">
@@ -608,7 +608,7 @@
                                     </Ellipse.Style>
                                 </Ellipse>
                                 <TextBlock Text="{Binding StatusBannerMessage}" FontSize="13" Foreground="{DynamicResource TextPrimary}" TextWrapping="Wrap" MaxWidth="600" VerticalAlignment="Center"/>
-                                <Button Style="{StaticResource GhostButtonStyle}" Command="{Binding DismissBannerCommand}" Content="✕" ToolTip="Dismiss" Margin="12,0,0,0" Foreground="{DynamicResource TextSecondary}" Cursor="Hand"/>
+                                <Button Style="{StaticResource GhostButtonStyle}" Command="{Binding DismissBannerCommand}" Content="✕" ToolTip="Dismiss" Margin="12,0,0,0" Foreground="{DynamicResource TextSecondary}" Cursor="Hand" AutomationProperties.Name="Dismiss"/>
                             </StackPanel>
                         </Border>
                     </Grid>
