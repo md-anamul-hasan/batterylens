@@ -2,6 +2,11 @@
 
 All notable changes to BatteryLens. Versioning follows [Semantic Versioning](https://semver.org/); the version lives in `Directory.Build.props`.
 
+## [1.2.0] - 2026-11-19
+
+### Changed
+- New look: Technical Glassmorphism v1.0, the design system of mdanamulhasan.com. Slate canvas, Precision Cobalt accent with PLM teal highlights in dark mode, hairline borders, crisp 6/10/14 px corners, restrained shadows.
+
 ## [1.1.0] - 2026-10-22
 
 First open-source release (MIT). Earlier builds were a paid product; this release removes licensing entirely, so every feature is free.
